@@ -14,7 +14,9 @@
 }
 
 :root { 
-  --text-color: #ffffff; 
+  --light-text: #ffffff; 
+  --primary: #2091F9;
+  --text: #252B42;
 }
 
 body {
