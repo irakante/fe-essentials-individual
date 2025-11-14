@@ -6,7 +6,9 @@
     gap: 50px;
     align-self: stretch;
 }
-
+.features__header{
+    padding: 0 50px;
+}
 .features__title {
     color: var(--text, #252B42);
     text-align: center;
@@ -18,4 +20,80 @@
     line-height: 55px;
     /* 114.583% */
     letter-spacing: 0.2px;
+}
+.features__subtitle{
+    color: var(--second-text, #374754);
+text-align: center;
+/* H4 */
+font-family: Graphik;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 142.857% */
+letter-spacing: 0.2px;
+}
+
+/* Media card: center an SVG (e.g., play icon) on top of an image */
+.media-card {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* change as needed or set a fixed width */
+    max-width: 720px;
+    overflow: hidden;
+}
+.media-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Full-area overlay used for centering content */
+.media-card__overlay {
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* allow clicks to pass through if you want image clicks */
+}
+
+/* The visible button/icon centered on the image */
+.media-card__button {
+    pointer-events: auto; /* enable clicks on the button */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: rgba(26, 115, 255, 0.95); /* blue circle like attachment */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.media-card__button:focus {
+    outline: 3px solid rgba(26,115,255,0.18);
+}
+.media-card__button:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+/* Scale SVG inside the button and ensure it stays centered */
+.media-card__button svg {
+    width: 42%;
+    height: 42%;
+    display: block;
+    fill: currentColor; /* inherits color from button */
+}
+
+/* Small responsive adjustment */
+@media (max-width: 480px) {
+    .media-card__button { width: 56px; height: 56px; }
+}
+
+/* Example utility: if you prefer overlay to capture clicks and act as a button */
+.media-card__overlay-button {
+    position: absolute; inset: 0; display:flex; align-items:center; justify-content:center;
 }
