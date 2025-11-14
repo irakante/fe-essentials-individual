@@ -1,7 +1,32 @@
+@font-face {
+  font-family: 'Graphik';
+  src: url('../fonts/graphik-extralight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+}
+
+:root { 
+  --text-color: #ffffff; 
+}
+
+body {
+  font-family: 'Graphik', sans-serif;
+}
+
+h1 {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-size: 1em; /* Set font size to a base unit, e.g., 16px */
+  font-weight: normal; /* Remove default bold styling */
+  line-height: 1.2; /* Set a consistent line height */
+  color: inherit; /* Inherit color from parent, or set a default like black */
+  /* Add other properties as needed, e.g., text-decoration: none; */
 }
