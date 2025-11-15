@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Graphik';
   src: url('../fonts/graphik-extralight.woff2') format('woff2');
+    src: url('../fonts/graphik-bold.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
