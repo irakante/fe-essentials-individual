@@ -1,0 +1,106 @@
+.calendar {
+    display: flex;
+    padding: 80px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.calendar__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.calendar__header {
+    color: var(--text, #252B42);
+    text-align: center;
+    /* H2 */
+    font-family: Graphik;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    /* 114.583% */
+    letter-spacing: 0.2px;
+}
+
+
+.calendar__title {
+    color: var(--second-text, #374754);
+    text-align: center;
+    font-family: Graphik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+}
+
+
+.calendar__button-container {
+    display: flex;
+    width: 378px;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 59px;
+}
+
+.calendar__try-button {
+    display: flex;
+    width: 236px;
+    padding: 16px 0;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+    background: var(--primary, #2091F9);
+    color: var(--light-text, #FFF);
+    font-family: Graphik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 100% */
+    letter-spacing: 0.2px;
+}
+
+
+/* Calendar: remove whitespace/gap between inline SVGs and images */
+.calendar__image img,
+.calendar__image svg {
+    display: block;
+}
+
+.calendar__image {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar__img {
+    padding: 0 40px;
+}
+
+.calendar__img-grey {
+    border: 3px solid #9FA2A5;
+    border-radius: 7px;
+}
+
+.calendar__img-black {
+    border: 3px solid #000000;
+    border-radius: 3px;
+}
+
+@media (min-width: 1024px) {
+    .calendar {
+        display: flex;
+        padding: 80px 0;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        align-self: stretch;
+        justify-content: center;
+    }
+}
