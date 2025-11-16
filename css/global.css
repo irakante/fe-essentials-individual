@@ -1,11 +1,18 @@
 @font-face {
   font-family: 'Graphik';
   src: url('../fonts/graphik-extralight.woff2') format('woff2');
-  src: url('../fonts/graphik-bold.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
+   font-weight: 400;
+   font-style: normal;
 }
 
+ 
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../fonts/graphik-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 *,
 *::after,
 *::before {
@@ -14,12 +21,15 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --light-text: #ffffff;
   --primary: #2091F9;
   --text: #252B42;
   --second-text: #374754;
   --light-background: #FFFFFF;
+  --dark-background: #252B42;
 }
 
 body {
@@ -48,4 +58,8 @@ h1 {
   color: inherit;
   /* Inherit color from parent, or set a default like black */
   /* Add other properties as needed, e.g., text-decoration: none; */
+}
+
+ul{
+  list-style: none;
 }
