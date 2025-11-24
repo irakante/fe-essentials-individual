@@ -15,7 +15,7 @@
             padding: 10px;
         }
 
-        
+
     }
 
     .header__hero {
@@ -59,7 +59,7 @@
         font-family: Graphik;
         font-size: 28px;
         font-style: normal;
-         font-weight: 400;
+        font-weight: 400;
         line-height: 40px;
         /* 142.857% */
         letter-spacing: 0.2px;
@@ -67,7 +67,7 @@
 
     .header__button-container {
         display: flex;
-        
+
         padding: 50px 0;
         flex-direction: column;
         align-items: center;
@@ -93,7 +93,7 @@
     }
 
     .header__hero__padding-bottom {
-       
+
         height: 128px;
     }
 }
@@ -137,7 +137,21 @@
             /* 113.514% */
             letter-spacing: 0.2px;
         }
+    }
 
+    .header__menu-burger {
+        order: 1;
+    }
 
+    .header__logo {
+        order: 2;
+    }
+
+    .header__icons {
+        order: 3;
+    }
+
+    .header__content{
+        padding:0 40px;
     }
 }
