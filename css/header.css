@@ -96,6 +96,11 @@
 
         height: 128px;
     }
+
+    .mobile-menu__link{
+        text-decoration: none;
+        color:#FFF;
+    }
 }
 
 /* big responsive adjustment */
